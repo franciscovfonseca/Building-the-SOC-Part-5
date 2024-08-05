@@ -213,6 +213,41 @@ This way we make sure it works and it's generating desired result ➜ before upd
 <summary> <h2>2️⃣ Alert Creation</h2> </summary>
 <br>
 
+We're now going to Create our Microsoft Sentinel Analytics Query Rules.
+
+These are going to be used to Create Alerts ➜ and then ultimately used to spin up Incidents for some Events taking place ikn our Environment.
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+
+
 
 
 Here we're using KQL queries to trigger alerts and spin up incidents in Microsoft Sentinel.

@@ -260,9 +260,9 @@ Back in **Microsoft Sentinel** ➜ click on **Import** to upload the **JSON File
 >   
 > **<summary> 📝 Explanation</summary>**
 > 
-> In this final stage of the lab we're going to explore some of the Custom Analytics Rules / Alerts that we created in Sentinel.
+> In this final stage of the lab ➜ we're going to explore some of the **Custom Analytics Rules / Alerts** that we created in **Sentinel**.
 > 
-> We'll look at the Queries that make those Events ➜ and try to go through and manually trigger at least 6 of them.
+> We'll look at the **Queries** that make those Events ➜ and try to go through and manually trigger at least 6 of them.
 >   
 > This will allow us to understand how the Analytics Rules & the KQL actually work.
 > 
@@ -326,6 +326,8 @@ Here are some Tests to Run:
 
 After each attach, wait 10-20 minutes ➜ then check Sentinel to see if you have any incidents.
 
+<br>
+
 >   <details close> 
 >   
 > **<summary> 💡 Note</summary>**
@@ -336,11 +338,141 @@ After each attach, wait 10-20 minutes ➜ then check Sentinel to see if you have
 
 <br>
 
-#### ➡️ Incidents in Sentinel after Simulating Some Attacks:
+### ➡️ Incidents in Sentinel after Simulating Some Attacks:
 
 <br>
 
 ![azure portal](https://github.com/user-attachments/assets/5d18fe9e-f39b-41a8-8665-1506fbd81758)
+
+<br>
+
+  </details>
+
+<h2></h2>
+
+<details close> 
+<summary> <h2>4️⃣ Run Insecure Environment for 24 Hours</h2> </summary>
+<br>
+
+The following table shows the measurements taken from the insecure environment after the initial 24 hour observation period:
+
+<br>
+
+### Metrics - Before Securing Environment
+
+<br>
+
+Start Time: 1/18/2024 15:44
+
+Stop Time: 1/19/2024 15:44
+
+<br>
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 29005
+| Syslog (Linux VM)                   | 16562
+| SecurityAlert (Microsoft Defender for Cloud)            | 4
+| SecurityIncident (Sentinel Incidents)        | 204
+| NSG Inbound Malicious Flows Allowed | 2837
+
+<br>
+
+<h2></h2>
+
+<br>
+
+### Attack Maps Before Hardening / Security
+
+<br>
+
+Before taking the screenshots ➜ the Workbooks need to be edited to only show the **last 24 hours**.
+
+💡 The query runs over the last 30 days by default.
+
+<br>
+
+>   <details close> 
+>   
+> **<summary> 📋 Steps to Edit the Maps:</summary>**
+> 
+> <br>
+> 
+> From inside the **Workbook** ➜ click on ✏️ **Edit** 
+> 
+> <br>
+> 
+> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> 
+> <br>
+> 
+> Then go all the way down and to the right ➜ click the **↑ Edit** button
+> 
+> <br>
+> 
+> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> 
+> <br>
+> 
+> Change the **Time Range** to ```Last 24 hours```
+> 
+> Then press the **Run Query** button
+> 
+> <br>
+> 
+> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> 
+> <br>
+> 
+> Finally ➜ click 📒**Done Editing**
+> 
+> <br>
+> 
+> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> 
+> <br>
+> 
+> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> 
+> <br>
+> 
+>   </details>
+
+<br>
+
+<h2></h2>
+
+<br>
+
+### NSG Allowed Malicious Inbound Flows:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+
+<br>
+
+### Linux SSH Authentication Failures:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+
+<br>
+
+### Windows RDP/SMB Authentication Failures:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+
+<br>
+
+### MS SQL Server Authentication Failures:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
 
 <br>
 

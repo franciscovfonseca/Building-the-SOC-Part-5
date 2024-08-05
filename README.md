@@ -45,7 +45,7 @@ Click on the **Workbooks** blade ➜ and then ➕ **Add Workbook**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/36df51b2-cdcd-42e7-ad55-d26078edda07)
 
 <br>
 
@@ -63,7 +63,7 @@ Click ✏️ **Edit**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/9d44e9cd-77b8-41f4-93a7-2067a752e545)
 
 <br>
 
@@ -71,11 +71,11 @@ There's 2 Elements in the default workbook ➜ so we'll 🗑️ **Remove** them 
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/343aafd9-44d7-4b59-bcda-b031db117d2b)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/202e60b2-e41e-4278-a423-c2b64b411707)
 
 <br>
 
@@ -83,7 +83,7 @@ Then we're going to click on ➕ **Add** ➜ and we're going to 𝄜 **Add query
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/4ab29302-b055-44cb-ba8e-7cb881f5b0c7)
 
 <br>
 
@@ -91,7 +91,7 @@ We'll then click the **</> Advanced Editor blade**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/d413801a-f244-417b-b0e1-98123d4fc183)
 
 <br>
 
@@ -101,7 +101,7 @@ Copy the **JSON** text.
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/f3af9386-d113-4c36-ac3f-02f2729f170a)
 
 <br>
 
@@ -111,7 +111,7 @@ Then click ✔️ **Done Editing** down bellow
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/17ab1229-7a1b-46d8-bc07-a5eb7fa9069e)
 
 <br>
 
@@ -127,7 +127,7 @@ Click **"Apply"**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/da6e470e-b63b-401d-8b97-c9d2883ad25a)
 
 <br>
 
@@ -135,7 +135,7 @@ Click **"Apply"**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/63f4d693-f9a9-44b1-99cd-70b408a5b8a1)
 
 <br>
 
@@ -153,144 +153,55 @@ We'll click on ➕ **Add Workbook** ➜ follow the same process ➜  and use the
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
 
 <br>
 
-💡 We can then Test the Query ➜ to see if Events will be plotted on the Maps.
-
-Exit the Advanced Editor and grab the query from the main Edit page, then use it to query the logs in LAW.
-
-For example, this is the query from the Microsoft SQL Server failed authentication workbook in LAW:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-
-
+<details close> 
   
-> The first thing ➜ we're going to do is create a **Diagnostic Setting** in **Microsoft Entra ID**.
-> 
-> This will allow us to **Ingest Logs** into our **Log Analytics Workspace**.
+**<summary> 💡 We can then Test the Query ➜ to see if Events will be plotted on the Maps.</summary>**
 
 <br>
 
-- Choose a **"Diagnostic setting name"** ➜ I picked ```ADD-Logs```
-
-- Under **Logs** ➜ **Category groups** ➜ select ☑️ **AuditLogs**,  ☑️ **SigninLogs** and ☑️ **NonInteractiveUserSigninLogs**
-
-- Make sure we're sending the Logs to our **Log Analytics Workspace** ```LAW-Cyber-Lab```
-
-Click **Save**
+From inside the **Workbook** ➜ click on ✏️ **Edit** ➜ and then **↑ Edit**
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/ed64370f-008f-4711-8e7d-25401d8a29a8)
+![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
 
 <br>
 
-Next we'll create a **New User**:
-
-- We can Name it ```Lain```
-
-- Copy and Save the **Auto-generated Password**
+![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/b4c7d057-a52c-4dee-bcd5-79111a5f44d6)
+Copy the **"Log Analytics Worspace Logs Query"** from under the ⚙️ **Settings"** blade
 
 <br>
 
-Go to the **Assignments** tab ➜ click on ➕ **Add role** ➜ assign the **Global Administrator** role to the New User.
-
-Click **"Review + create"** to Create the New User:
+![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/3e824ba8-8383-441b-9419-346b8bfab7a2)
+We'll then go to our Log Analytics Workspace ```LAW-Cyber-Lab``` ➜ and **Paste It** to **Query the Logs**
 
 <br>
 
-<h2></h2>
+  </details>
 
 <br>
 
-We'll now create another **New User** ➜ this is going to be our **"Attacker" User** ```Madara```
-
-➡️ Generate some **Failed Authentication Logs** ➜ by failing to Log In 10 times in a row.
+For example ➜ this is the Query from the **Microsoft SQL Server Failed Authentication** Workbook in LAW:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/b5025517-7ef9-4705-b200-5ced4626b52c)
+![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
 
 <br>
 
-<h2></h2>
+By doing this ➜ you can test changes to the query.
 
-<br>
-
-We can go back to our **Log Analytics Workspace** to confirm that **Logs are Properly Being Ingested**.
-
-<br>
-
->   <details close> 
->   
-> **<summary> 💡 Note</summary>**
-> 
-> The **AuditLogs** come in pretty quickly, but the **SigninLogs** and **AzureActivity** take a while to come into the **Log Analytics Workspace**.
->   
-> Generate the logs, then take a 20-30 minute coffee break and query the LAW after.
-> 
->   </details>
-
-<br>
-
-### Audit Logs:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/0768f8c7-814f-417a-a249-b3d684091d33)
-
-<br>
-
-### Signin Logs:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/cb258735-8498-4926-955c-397cdd31f603)
+This way we make sure it works and it's generating desired result ➜ before updating the Workbooks in Sentinel.
 
 <br>
 

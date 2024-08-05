@@ -11,33 +11,26 @@
 <br />
 <br />
 
-In this Lab we're going to create 4 diffferent World Maps
-
-We'll map out where different people around the World are doind Malicious things to our Environment since its been online.
-
-<br>
-
-
-So basically we're going to **Build 4 Attack Maps for the Following Use Cases**:
-
-
-1. Failed Authentication against **Windows WMs** (RDP / SMB / General Authentication Failures)
-
-2. Failed Authentication against **Linux VM** (SSH)
-
-3. Failed Authentication to the **Microsoft SQL Server** (inside our Windows VM)
-
-4. Malicious Inbound Flows for the **Network Security Groups**
-
-
-<br>
-
-<br>
-
 <details close> 
 <summary> <h2>1️⃣ World Attack Maps Construction</h2> </summary>
 <br>
 
+> The first thing we're going to do is **Build 4 Attack Maps for the Following Use Cases**:
+>
+> 
+> 1. Failed Authentication against **Windows WMs** (RDP / SMB / General Authentication Failures)
+> 
+> 2. Failed Authentication against **Linux VM** (SSH)
+> 
+> 3. Failed Authentication to the **Microsoft SQL Server** (inside our Windows VM)
+> 
+> 4. Malicious Inbound Flows for the **Network Security Groups**
+>
+
+
+<br>
+
+<br>
 
 Go to **Microsoft Sentinel** ➜ select our Log Analytics Workspace ```LAW-Cyber-Lab``` that is associated with this Sentinel Instance.
 

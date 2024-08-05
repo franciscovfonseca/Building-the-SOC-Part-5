@@ -1,6 +1,6 @@
 <br>
 
-<h1 align="center">Stage II - Building the SOC - Part 5</h1>
+<h1 align="center">Stage III - Configure Sentinel & Run Insecure Environment (24H)</h1>
 
 <br>
 

@@ -199,9 +199,9 @@ For example ➜ this is the Query from the **Microsoft SQL Server Failed Authent
 
 <br>
 
-By doing this ➜ you can test changes to the Query.
+By doing this, you can test changes to the Query.
 
-This way we make sure it works and it's generating desired result ➜ before updating the Workbooks in Sentinel.
+✅ This way we make sure it's **Working and Generating Desired Results** ➜ before having to Update the Sentinel Workbooks.
 
 <br>
 
@@ -213,121 +213,43 @@ This way we make sure it works and it's generating desired result ➜ before upd
 <summary> <h2>2️⃣ Alert Creation</h2> </summary>
 <br>
 
-We're now going to Create our Microsoft Sentinel Analytics Query Rules.
-
-These are going to be used to Create Alerts ➜ and then ultimately used to spin up Incidents for some Events taking place ikn our Environment.
-
-
-
-
-
-
-
-
-
-
-
+> We're now going to **Create our Microsoft Sentinel Analytics Query Rules**.
+> 
+> These are going to be used to **Create Alerts** ➜ and then ultimately used to **Spin up Incidents** for certain Events taking place in our Environment.
 
 <br>
 
+Back in the **Azure Portal** ➜ go to **Microsoft Sentinel** ➜ and click on the **Analytics** blade
 
 <br>
 
+![azure portal](https://github.com/user-attachments/assets/577a0b79-d93b-466e-a365-9d1f6107a07e)
 
 <br>
 
+We're then going to Import all of our [Sentinel Analytics Rules](https://github.com/joshmadakor1/Cyber-Course-v2/blob/main/Sentinel-Analytics-Rules/Sentinel-Analytics-Rules(KQL%20Alert%20Queries).json).
+
+Download the **Raw JSON File** and Save it.
 
 <br>
 
+![azure portal](https://github.com/user-attachments/assets/f075d305-ac55-47d5-85d0-a0e80f4b7022)
 
 <br>
 
+Back in **Microsoft Sentinel** ➜ click on **Import** to upload the **JSON File**.
 
 <br>
 
-
-
-
-
-
-Here we're using KQL queries to trigger alerts and spin up incidents in Microsoft Sentinel.
-
-Sentinel > Analytics > Create scheduled query rule
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We're now going to export the **Azure Activity Logs** to our **Log Analytics Workspace**.
-
-Go to **Azure Monitor** ➜ then the **Activity Log** blade ➜ and click on ⚙️ **Export Activity Logs**
+![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/bf87437a-ba52-4a1e-9ca1-4856940e053f)
+✅ We can confirm that all of our **13 Analytics Query Rules** were **Successfully Deployed**!
 
 <br>
 
-We'll then create a new **Diagnostic Setting** ➜ I named mine ```ds-activity-logs```:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/d4c4cc49-71f8-4ab9-85d9-942d80a8c289)
-
-<br>
-
-Now we'll **Generate some Logs** to confirm functionality.
-
-To do so I decided to:
-
-- Create 2 New **Resource Groups**
-- Add a new **Inbound Security Rule** to 1 of the existing NSGs
-
-<br>
-
-### New Resource Groups:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/c1273b17-0839-4d9a-b87c-a50b3db2554b)
-
-<br>
-
-### New Inbound Security Rule in the ```attack-vm-nsg```:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/5d18fe9e-f39b-41a8-8665-1506fbd81758)
-
-<br>
-
-💡 I then Deleted all these new Resources just to confirm the **Logs were Flowing into the LAW Properly**.
-
-Back to our **Log Analytics Workspace** ➜ I **Queried the Logs** for any **Changes to the NSGs**:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/1f7885d3-13bf-454c-8d8d-4a9e6d229666)
-
-<br>
-
-I also performed another **Query for Checking Resource Group Deletion** in our Logs:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/26ca75bd-e180-4e8b-9f95-858145bb805b)
+![azure portal](https://github.com/user-attachments/assets/26168fbd-25bd-4b1f-b5cd-23cce068badd)
 
 <br>
 
@@ -336,7 +258,7 @@ I also performed another **Query for Checking Resource Group Deletion** in our L
 <h2></h2>
 
 <details close> 
-<summary> <h2>3️⃣ Attack Traffic Generation ➜ Simulated Attacks</h2> </summary>
+<summary> <h2>3️⃣ Attack Traffic Generation (Simulated Attacks)</h2> </summary>
 <br>
 
 To test your alerts and incidents rule configuration, simulate some attacks on the VMs and see if they show up in Sentinel (generate alerts and incidents). We have to make sure these work before the first observation period. Here are some tests to run:

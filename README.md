@@ -167,11 +167,11 @@ From inside the **Workbook** ➜ click on ✏️ **Edit** ➜ and then **↑ Edi
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
+![azure portal](https://github.com/user-attachments/assets/d115a623-3ec5-4584-993f-ec5ea9f48bf4)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
+![azure portal](https://github.com/user-attachments/assets/d5b9d372-f6b4-49f2-8674-12adb50aa0a2)
 
 <br>
 
@@ -179,7 +179,7 @@ Copy the **"Log Analytics Worspace Logs Query"** from under the ⚙️ **Setting
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
+![azure portal](https://github.com/user-attachments/assets/0c976a36-0991-4679-aea1-22588d9b24f6)
 
 <br>
 
@@ -195,11 +195,11 @@ For example ➜ this is the Query from the **Microsoft SQL Server Failed Authent
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/425a8c12-e647-40d9-aa56-4fa965ea75da)
+![azure portal](https://github.com/user-attachments/assets/25d8d89c-1a6c-4158-8400-35c46995a395)
 
 <br>
 
-By doing this ➜ you can test changes to the query.
+By doing this ➜ you can test changes to the Query.
 
 This way we make sure it works and it's generating desired result ➜ before updating the Workbooks in Sentinel.
 
@@ -210,8 +210,30 @@ This way we make sure it works and it's generating desired result ➜ before upd
 <h2></h2>
 
 <details close> 
-<summary> <h2>2️⃣ Subscription Level Logging ➜ Activity Log</h2> </summary>
+<summary> <h2>2️⃣ Manual Alert Creation</h2> </summary>
 <br>
+
+
+
+Here we're using KQL queries to trigger alerts and spin up incidents in Microsoft Sentinel.
+
+Sentinel > Analytics > Create scheduled query rule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 We're now going to export the **Azure Activity Logs** to our **Log Analytics Workspace**.
 

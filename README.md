@@ -210,7 +210,7 @@ This way we make sure it works and it's generating desired result ➜ before upd
 <h2></h2>
 
 <details close> 
-<summary> <h2>2️⃣ Manual Alert Creation</h2> </summary>
+<summary> <h2>2️⃣ Alert Creation</h2> </summary>
 <br>
 
 
@@ -301,8 +301,72 @@ I also performed another **Query for Checking Resource Group Deletion** in our L
 <h2></h2>
 
 <details close> 
-<summary> <h2>3️⃣ Resource Level Logging ➜ Azure Storge Account & Azure Key Vault</h2> </summary>
+<summary> <h2>3️⃣ Attack Traffic Generation ➜ Simulated Attacks</h2> </summary>
 <br>
+
+To test your alerts and incidents rule configuration, simulate some attacks on the VMs and see if they show up in Sentinel (generate alerts and incidents). We have to make sure these work before the first observation period. Here are some tests to run:
+
+<br>
+
+Trigger AAD Brute Force Success:
+
+Simulate brute force success against Azure AD with your attacker account (from attack-vm). Either use PowerShell or an incognito window to fail 10-11 consecutive logins, followed by one successful login.
+
+Trigger MSSQL Brute Force Attempt: Using the attack-vm, use PowerShell of SSMS to simulate brute force attempt against your SQL Server by failing 10-11 consecutive logins.
+
+Trigger Malware Outbreak: In windows-vm generate a malware alert by using PowerShell to create 1 or more EICAR files. You can also do this manually by creating a text file with an EICAR string in it.
+
+Trigger Possible Privilege Escalation (AKV Critical Credential Retrieval or Update): Manually read Key Vault Secret “Tenant-Global-Admin-Password” in the Azure portal.
+
+Trigger Windows Host Firewall Tampering: Manually Enable and Disable the windows-vm Firewall.
+
+Trigger Excessive Password Resets: Reset a users’ password in the Azure portal 10-11 times.
+
+<br>
+
+
+After each attach, wait 10-20 minutes, then check Sentinel to see if you have any incidents. This can also help you with incident investigation later on in the lab.
+
+Incidents in Sentinel after simulating some attacks:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/5d18fe9e-f39b-41a8-8665-1506fbd81758)
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The next step is to Enable Logs for our Storage account and for our Key Vault.
 

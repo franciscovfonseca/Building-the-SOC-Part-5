@@ -254,209 +254,93 @@ Back in **Microsoft Sentinel** ➜ click on **Import** to upload the **JSON File
 <summary> <h2>3️⃣ Attack Traffic Generation (Simulated Attacks)</h2> </summary>
 <br>
 
-To test your alerts and incidents rule configuration, simulate some attacks on the VMs and see if they show up in Sentinel (generate alerts and incidents). We have to make sure these work before the first observation period. Here are some tests to run:
+<br>
+
+>   <details close> 
+>   
+> **<summary> 📝 Explanation</summary>**
+> 
+> In this final stage of the lab we're going to explore some of the Custom Analytics Rules / Alerts that we created in Sentinel.
+> 
+> We'll look at the Queries that make those Events ➜ and try to go through and manually trigger at least 6 of them.
+>   
+> This will allow us to understand how the Analytics Rules & the KQL actually work.
+> 
+>   </details>
 
 <br>
 
-Trigger AAD Brute Force Success:
+To test your alerts and incidents rule configuration ➜ simulate some attacks on the VMs and see if they show up in Sentinel (generate alerts and incidents).
 
-Simulate brute force success against Azure AD with your attacker account (from attack-vm). Either use PowerShell or an incognito window to fail 10-11 consecutive logins, followed by one successful login.
-
-Trigger MSSQL Brute Force Attempt: Using the attack-vm, use PowerShell of SSMS to simulate brute force attempt against your SQL Server by failing 10-11 consecutive logins.
-
-Trigger Malware Outbreak: In windows-vm generate a malware alert by using PowerShell to create 1 or more EICAR files. You can also do this manually by creating a text file with an EICAR string in it.
-
-Trigger Possible Privilege Escalation (AKV Critical Credential Retrieval or Update): Manually read Key Vault Secret “Tenant-Global-Admin-Password” in the Azure portal.
-
-Trigger Windows Host Firewall Tampering: Manually Enable and Disable the windows-vm Firewall.
-
-Trigger Excessive Password Resets: Reset a users’ password in the Azure portal 10-11 times.
+⚠️ We have to make sure these work before the first observation period.
 
 <br>
 
+Here are some Tests to Run:
 
-After each attach, wait 10-20 minutes, then check Sentinel to see if you have any incidents. This can also help you with incident investigation later on in the lab.
+<br>
 
-Incidents in Sentinel after simulating some attacks:
+#### ❶ Trigger AAD Brute Force Success:
+
+- Simulate brute force success against Azure AD with your attacker account (from attack-vm).
+
+- Either use PowerShell or an incognito window to fail 10-11 consecutive logins, followed by one successful login.
+
+<h2></h2>
+
+#### ❷ Trigger MSSQL Brute Force Attempt:
+
+- We'll use the ```attack-vm``` for this one.
+
+- Use ***PowerShell*** or ***SSMS*** to simulate **Brute Force Attempt against your SQL Server** by failing 10 Consecutive Logins.
+
+<h2></h2>
+
+#### ❸ Trigger Malware Outbreak:
+
+- In ```windows-vm``` generate a **Malware Alert** by using ***PowerShell*** to create 1 or more **EICAR Files**.
+
+- 💡 You can also do this Manually by creating a Text File with an **EICAR String** in it.
+
+<h2></h2>
+
+#### ❹ Trigger Possible Privilege Escalation (AKV Critical Credential Retrieval or Update):
+
+- Manually read our **Key Vault Secret** ```Tenant-Global-Admin-Password``` in the Azure portal.
+
+<h2></h2>
+
+#### ❺ Trigger Windows Host Firewall Tampering:
+
+- Manually Enable & Disable the ```windows-vm``` **Firewall**.
+
+<h2></h2>
+
+#### ❻ Trigger Excessive Password Resets:
+
+- Reset a **User's Password** in the Azure portal 10 times.
+
+<h2></h2>
+
+<br>
+
+After each attach, wait 10-20 minutes ➜ then check Sentinel to see if you have any incidents.
+
+>   <details close> 
+>   
+> **<summary> 💡 Note</summary>**
+> 
+> This can also help you with incident investigation later on in the lab.
+> 
+>   </details>
+
+<br>
+
+#### ➡️ Incidents in Sentinel after Simulating Some Attacks:
 
 <br>
 
 ![azure portal](https://github.com/user-attachments/assets/5d18fe9e-f39b-41a8-8665-1506fbd81758)
-
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The next step is to Enable Logs for our Storage account and for our Key Vault.
-
-<br>
-
-### Storage Account:
-
-<br>
-
-Go to **Storage Accounts** ➜ and select our ```sacyberlab009``` Storage Account
-
-On the left side under **Monitoring** ➜ select the **Diagnostic settings** blade
-
-For the **"blob"** line ➜ click on ⛔ **Disabled** under **"Diagnostic status"** for the 
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/14c169a9-f7cc-4c4e-8c0e-23e6f7898c9e)
-
-<br>
-
-Click on ➕ **Add Diagnostic setting**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/9ad6d6eb-6fcd-4208-90c6-c2f9308ad88d)
-
-<br>
-
-- Set up a **"Diagnostic setting name"** ➜ I picked ```ds-storage-acct```
-
-- Under **Logs** ➜ **Category groups** ➜ select ☑️ **audit**
-
-- Make sure we're sending the Logs to our **Log Analytics Workspace** ```LAW-Cyber-Lab```
-
-Click **Save**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/6750ea6a-f1b8-46b5-81c2-c16358ecf292)
-
-<br>
-
-<h2></h2>
-
-<br>
-
-### Azure Key Vault:
-
-<br>
-
-Navigate to **Azure Key Vault** ➜ click on **"Create a Key Vault"**.
-
-⚠️ Make sure it is in the same Resource Group & Region as our other Resources.
-
-Also ➜ the **"Key vault name"** must be Globally Unique.
-
-Click the **"Next"** button:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/0928b8a2-16e2-4e10-8598-2870b2f30635)
-
-<br>
-
-Under the **"Access configuration"** tab ➜ set the **"Permission model"** to ◉ **Vault access policy**
-
-Click on **"Review + Create"**.
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/5e84b87f-728d-498b-8ea0-e1d02b71f406)
-
-<br>
-
-We'll then create a **Diagnostic Setting** for the **Key Vault** ➜ the same way we did for the **Storage Account**.
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/463cc82f-4806-4c1f-9103-051ab84689f8)
-
-<br>
-
-- Pick a **"Diagnostic setting name"** ➜ ```ds-akv```
-
-- Under **Logs** ➜ **Category groups** ➜ select ☑️ **audit**
-
-- Once again ➜ make sure we're sending the Logs to our **Log Analytics Workspace** ```LAW-Cyber-Lab```
-
-Click **Save**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/358c763b-3b13-49ae-be30-ae40384df755)
-
-<br>
-
-  </details>
-
-<h2></h2>
-
-<details close> 
-<summary> <h2>4️⃣ Generate some Logs</h2> </summary>
-<br>
-
-Finally, we're going to generate some logs by creating a Few Secrets inside of our Azure Key Vault
-
-We're then going to **Query those Logs** and analyse them inside of our LAW.
-
-<br>
-
-### Secret Number 1:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/677d2a01-7249-4784-ba4d-14ec206b7014)
-
-<br>
-
-### Secret Number 2:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/93575473-1b10-46a3-8b71-ed3eb61897d3)
-
-<br>
-
-Inside of our ```ak-cyber-lab``` **Key Vault** ➜ we can confirm that both Secrets were Created ✅
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/c03626dd-4df1-4c3a-99fe-ce8dbb007f83)
-
-<br>
-
-So we'll then Query our ```LAW-Cyber-Lab``` ➜ to make sure **Logs are Flowing from our Resources**:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/8a1c02ff-e3b8-48a0-ae37-b69d648bae25)
 
 <br>
 

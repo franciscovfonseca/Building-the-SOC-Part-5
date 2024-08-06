@@ -1,6 +1,6 @@
 <br>
 
-<h1 align="center">Stage II - Building the SOC - Part 4</h1>
+<h1 align="center">Stage II - Building the SOC - Part 5</h1>
 
 <br>
 
@@ -39,6 +39,10 @@ Click on the **Workbooks** blade ➜ and then ➕ **Add Workbook**
 <br>
 
 ![azure portal](https://github.com/user-attachments/assets/36df51b2-cdcd-42e7-ad55-d26078edda07)
+
+<br>
+
+<h2></h2>
 
 <br>
 
@@ -139,6 +143,8 @@ We'll click on ➕ **Add Workbook** ➜ follow the same process ➜  and use the
 <br>
 
   </details>
+
+<h2></h2>
 
 <br>
 
@@ -286,7 +292,11 @@ Here are some Tests to Run:
 
 - Either use PowerShell or an incognito window to fail 10-11 consecutive logins, followed by one successful login.
 
+<br>
+
 <h2></h2>
+
+<br>
 
 #### ❷ Trigger MSSQL Brute Force Attempt:
 
@@ -294,7 +304,11 @@ Here are some Tests to Run:
 
 - Use ***PowerShell*** or ***SSMS*** to simulate **Brute Force Attempt against your SQL Server** by failing 10 Consecutive Logins.
 
+<br>
+
 <h2></h2>
+
+<br>
 
 #### ❸ Trigger Malware Outbreak:
 
@@ -302,23 +316,37 @@ Here are some Tests to Run:
 
 - 💡 You can also do this Manually by creating a Text File with an **EICAR String** in it.
 
+<br>
+
 <h2></h2>
+
+<br>
 
 #### ❹ Trigger Possible Privilege Escalation (AKV Critical Credential Retrieval or Update):
 
 - Manually read our **Key Vault Secret** ```Tenant-Global-Admin-Password``` in the Azure portal.
 
+<br>
+
 <h2></h2>
+
+<br>
 
 #### ❺ Trigger Windows Host Firewall Tampering:
 
 - Manually Enable & Disable the ```windows-vm``` **Firewall**.
 
+<br>
+
 <h2></h2>
+
+<br>
 
 #### ❻ Trigger Excessive Password Resets:
 
 - Reset a **User's Password** in the Azure portal 10 times.
+
+<br>
 
 <h2></h2>
 
@@ -342,7 +370,7 @@ After each attach, wait 10-20 minutes ➜ then check Sentinel to see if you have
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/5d18fe9e-f39b-41a8-8665-1506fbd81758)
+![azure portal](https://github.com/user-attachments/assets/00cef135-106c-4f4e-a5d0-f68e2b345c14)
 
 <br>
 

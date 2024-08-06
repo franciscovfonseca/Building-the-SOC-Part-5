@@ -382,7 +382,7 @@ Stop Time: 1/19/2024 15:44
 
 <br>
 
-### Attack Maps Before Hardening / Security
+### Attack Maps Before Hardening / Security Controls
 
 <br>
 

@@ -1,5 +1,3 @@
-<br>
-
 <h1 align="center">Stage II - Building the SOC - Part 5</h1>
 
 <br>

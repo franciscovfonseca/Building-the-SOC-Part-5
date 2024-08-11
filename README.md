@@ -428,7 +428,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 > 
 > <br>
 > 
-> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> ![azure portal](https://github.com/user-attachments/assets/d42567b3-d717-466b-a98e-a7c98062dfa3)
 > 
 > <br>
 > 
@@ -436,7 +436,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 > 
 > <br>
 > 
-> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> ![azure portal](https://github.com/user-attachments/assets/44ef059e-e7a7-48f4-b6de-1a6f63bb87ab)
 > 
 > <br>
 > 
@@ -446,7 +446,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 > 
 > <br>
 > 
-> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> ![azure portal](https://github.com/user-attachments/assets/3324a8ce-166a-4222-a107-ae13758e41fd)
 > 
 > <br>
 > 
@@ -454,11 +454,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 > 
 > <br>
 > 
-> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
-> 
-> <br>
-> 
-> ![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+> ![azure portal](https://github.com/user-attachments/assets/d70ed30f-7bde-4e90-8e45-c4e5ea86a2d0)
 > 
 > <br>
 > 
@@ -474,7 +470,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+![azure portal](https://github.com/user-attachments/assets/e892d644-b7ba-4f0a-b5b4-869a195a725c)
 
 <br>
 
@@ -482,7 +478,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+![azure portal](https://github.com/user-attachments/assets/04c1e583-c9b4-45d8-9ef1-cc91baf91b7f)
 
 <br>
 
@@ -490,7 +486,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+![azure portal](https://github.com/user-attachments/assets/10d0922f-149a-4280-b0e8-7c1d4c0be0fc)
 
 <br>
 
@@ -498,7 +494,7 @@ Before taking the screenshots ➜ the Workbooks need to be edited to only show t
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/8085ebbc-055d-48e6-bce8-e7147d0b8ef3)
+![azure portal](https://github.com/user-attachments/assets/337d5bb0-ae90-4dda-8666-6a75d5b24ae7)
 
 <br>
 

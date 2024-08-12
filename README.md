@@ -1,11 +1,11 @@
-<h1 align="center">Stage II - Building the SOC - Part 5</h1>
+<br>
+
+<h1 align="center">Stage III - Configure Microsoft Sentinel</h1>
 
 <br>
 
-<h2 align="center">Configure Microsoft Sentinel</h2>
-
 <p align="center">
-<img width="800" src="https://github.com/user-attachments/assets/39d59344-9d47-4be6-aba0-7ba2ead7efba" alt="Banner"/>
+<img width="1000" src="https://github.com/user-attachments/assets/069c7c79-c76d-4cba-a81f-a99db273d261" alt="Banner"/>
 <br />
 <br />
 

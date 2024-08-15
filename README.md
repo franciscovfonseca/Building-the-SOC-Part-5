@@ -10,10 +10,12 @@
 <br />
 
 <details close> 
-<summary> <h2>1️⃣ World Attack Maps Construction</h2> </summary>
+<summary> <h2>1️⃣ Create Sentinel Workbooks</h2> </summary>
 <br>
 
-> The first thing we're going to do is **Build 4 Attack Maps for the Following Use Cases**:
+<br>
+  
+> The first thing we're going to do is create **4 separate Sentinel Workbooks for the Following Use Cases**:
 >
 > 
 > 1. Failed Authentication against **Windows WMs** (RDP / SMB / General Authentication Failures)
@@ -25,6 +27,7 @@
 > 4. Malicious Inbound Flows for the **Network Security Groups**
 >
 
+<br>
 
 <br>
 
@@ -46,7 +49,7 @@ Click on the **Workbooks** blade ➜ and then ➕ **Add Workbook**
 
 <details close> 
   
-**<summary> 📝 Step-by-step Guide on How to Create the Sentinel Maps Inside the Workbooks?</summary>**
+<summary> 📝 Step-by-step Guide on **How to Create the Sentinel Maps Inside the Workbooks**</summary>
 
 <br>
 
